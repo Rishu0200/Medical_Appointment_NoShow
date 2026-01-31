@@ -1,16 +1,34 @@
-FROM python:slim
+FROM python:3.10-slim
 
-ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libatlas-base-dev \
+    libhdf5-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    python3-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
+# Copy the application code
 COPY . .
-# No training RUN here—load pre-trained model in app
 
+# Install dependencies from requirements.txt
+RUN pip install --no-cache-dir -e .
+
+# Train the model before running the application
+RUN python pipeline/training_pipeline.py
+
+# Expose the port that Flask will run on
 EXPOSE 5000
+
+# Run the app 
 CMD ["gunicorn", "-w", "3", "-b", "0.0.0.0:5000", "application:app"]
