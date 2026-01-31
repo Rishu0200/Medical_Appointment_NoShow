@@ -5,3 +5,12 @@ Healthcare_appointment.egg-info/SOURCES.txt
 Healthcare_appointment.egg-info/dependency_links.txt
 Healthcare_appointment.egg-info/requires.txt
 Healthcare_appointment.egg-info/top_level.txt
+config/__init__.py
+config/model_params.py
+config/paths_config.py
+src/__init__.py
+src/custom_exception.py
+src/data_ingestion.py
+src/logger.py
+utils/__init__.py
+utils/common_functions.py
