@@ -1,0 +1,7 @@
+README.md
+setup.py
+Healthcare_appointment.egg-info/PKG-INFO
+Healthcare_appointment.egg-info/SOURCES.txt
+Healthcare_appointment.egg-info/dependency_links.txt
+Healthcare_appointment.egg-info/requires.txt
+Healthcare_appointment.egg-info/top_level.txt

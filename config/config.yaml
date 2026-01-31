@@ -1,0 +1,22 @@
+data_ingestion:
+  bucket_name : "hospital_appointment_123"
+  bucket_file_name : "healthcare_noshows.csv"
+  train_ratio : 0.8
+
+data_processing:
+  categorical_columns:
+    - Gender
+    - Neighbourhood
+    - Scholarship 
+    - Hypertension
+    - Diabetes
+    - Alcoholism
+    - Handcap
+    - SMS_received
+    - Showed_up
+
+  numerical_columns:
+    - Age
+    - Date.diff
+
+  top_Neighbourhood : 30
