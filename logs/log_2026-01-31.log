@@ -95,3 +95,14 @@
 2026-01-31 12:57:48,542 - INFO - Logging the model into MLFLOW
 2026-01-31 12:57:48,595 - INFO - Logging Params and metrics to MLFLOW
 2026-01-31 12:57:48,634 - INFO - Model Training sucesfullly completed
+2026-01-31 13:14:26,244 - INFO - Succesfully read the YAML file
+2026-01-31 13:14:26,286 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.132:8080
+2026-01-31 13:14:26,286 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-31 13:14:54,611 - INFO - 192.168.0.132 - - [31/Jan/2026 13:14:54] "GET / HTTP/1.1" 200 -
+2026-01-31 13:14:54,821 - INFO - 192.168.0.132 - - [31/Jan/2026 13:14:54] "GET /static/style.css HTTP/1.1" 200 -
+2026-01-31 13:14:55,022 - INFO - 192.168.0.132 - - [31/Jan/2026 13:14:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-31 13:15:20,664 - INFO - 192.168.0.132 - - [31/Jan/2026 13:15:20] "POST / HTTP/1.1" 200 -
+2026-01-31 13:15:20,704 - INFO - 192.168.0.132 - - [31/Jan/2026 13:15:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
