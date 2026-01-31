@@ -9,3 +9,4 @@ lightgbm
 mlflow
 flask
 scipy
+gunicorn

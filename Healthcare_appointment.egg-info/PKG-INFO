@@ -13,5 +13,6 @@ Requires-Dist: lightgbm
 Requires-Dist: mlflow
 Requires-Dist: flask
 Requires-Dist: scipy
+Requires-Dist: gunicorn
 Dynamic: author
 Dynamic: requires-dist
