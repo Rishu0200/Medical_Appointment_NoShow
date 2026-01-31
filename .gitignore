@@ -2,3 +2,5 @@
 venv/
 __pycache__/
 *.pyc
+Healthcare_appointment.egg-info/
+logs/

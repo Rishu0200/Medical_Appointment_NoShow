@@ -1,1 +1,23 @@
 
+2026-01-31 12:52:10,143 - INFO - Succesfully read the YAML file
+2026-01-31 12:52:10,143 - INFO - Loading data
+2026-01-31 12:52:10,272 - INFO - Starting our Data Processing step
+2026-01-31 12:52:10,272 - INFO - Dropping the unnecessary columns
+2026-01-31 12:52:10,304 - INFO - Reading the config file for data processing
+2026-01-31 12:52:10,304 - INFO - Capping Ages at 100
+2026-01-31 12:52:10,335 - INFO - Created Age_capped column
+2026-01-31 12:52:10,336 - INFO - Created Has_condition column
+2026-01-31 12:52:10,336 - INFO - Dropping the columns not required for modeling
+2026-01-31 12:52:10,363 - INFO - Grouping rare categories in Neighbourhood column as Other
+2026-01-31 12:52:10,368 - INFO - Created Neighbourhood_grouped column
+2026-01-31 12:52:10,368 - INFO - Applying log transformation to Date.diff column
+2026-01-31 12:52:10,371 - INFO - Created Date_diff_log column
+2026-01-31 12:52:10,373 - INFO - Dropped columns: ['Age', 'Any_condition', 'Neighbourhood', 'Date.diff']
+2026-01-31 12:52:10,373 - INFO - Encoding categorical variables
+2026-01-31 12:52:10,411 - INFO - Categorical encoding completed
+2026-01-31 12:52:10,411 - INFO - Handling Imbalanced Data
+2026-01-31 12:52:13,598 - INFO - Data balanced sucesffuly
+2026-01-31 12:52:13,600 - INFO - Saving Processed Data
+2026-01-31 12:52:14,202 - INFO - Processed training data saved at: D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_train.csv
+2026-01-31 12:52:14,202 - INFO - Processed testing data saved at: D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_test.csv
+2026-01-31 12:52:14,202 - INFO - Data Processing Completed Successfully
