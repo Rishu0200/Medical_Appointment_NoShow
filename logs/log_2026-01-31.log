@@ -44,3 +44,54 @@
 2026-01-31 12:54:02,387 - INFO - Logging the model into MLFLOW
 2026-01-31 12:54:02,405 - INFO - Logging Params and metrics to MLFLOW
 2026-01-31 12:54:02,432 - INFO - Model Training sucesfullly completed
+2026-01-31 12:57:37,690 - INFO - Succesfully read the YAML file
+2026-01-31 12:57:37,690 - INFO - Data Ingestion started with hospital_appointment_123 and file is  healthcare_noshows.csv
+2026-01-31 12:57:37,690 - INFO - Starting data ingestion process
+2026-01-31 12:57:37,690 - ERROR - Error while downloading the csv file
+2026-01-31 12:57:37,690 - ERROR - CustomException : Error in D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\src\data_ingestion.py , line 29 : Failed to downlaod csv file 
+2026-01-31 12:57:37,690 - INFO - Data ingestion completed
+2026-01-31 12:57:37,690 - INFO - Succesfully read the YAML file
+2026-01-31 12:57:37,695 - INFO - Loading data
+2026-01-31 12:57:37,793 - INFO - Starting our Data Processing step
+2026-01-31 12:57:37,793 - INFO - Dropping the unnecessary columns
+2026-01-31 12:57:37,829 - INFO - Reading the config file for data processing
+2026-01-31 12:57:37,829 - INFO - Capping Ages at 100
+2026-01-31 12:57:37,849 - INFO - Created Age_capped column
+2026-01-31 12:57:37,851 - INFO - Created Has_condition column
+2026-01-31 12:57:37,851 - INFO - Dropping the columns not required for modeling
+2026-01-31 12:57:37,870 - INFO - Grouping rare categories in Neighbourhood column as Other
+2026-01-31 12:57:37,876 - INFO - Created Neighbourhood_grouped column
+2026-01-31 12:57:37,876 - INFO - Applying log transformation to Date.diff column
+2026-01-31 12:57:37,879 - INFO - Created Date_diff_log column
+2026-01-31 12:57:37,879 - INFO - Dropped columns: ['Age', 'Any_condition', 'Neighbourhood', 'Date.diff']
+2026-01-31 12:57:37,879 - INFO - Encoding categorical variables
+2026-01-31 12:57:37,909 - INFO - Categorical encoding completed
+2026-01-31 12:57:37,909 - INFO - Handling Imbalanced Data
+2026-01-31 12:57:40,316 - INFO - Data balanced sucesffuly
+2026-01-31 12:57:40,316 - INFO - Saving Processed Data
+2026-01-31 12:57:40,889 - INFO - Processed training data saved at: D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_train.csv
+2026-01-31 12:57:40,889 - INFO - Processed testing data saved at: D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_test.csv
+2026-01-31 12:57:40,889 - INFO - Data Processing Completed Successfully
+2026-01-31 12:57:42,152 - INFO - Starting our Model Training pipeline
+2026-01-31 12:57:42,152 - INFO - Starting our MLFLOW experimentation
+2026-01-31 12:57:42,152 - INFO - Logging the training and testing datset to MLFLOW
+2026-01-31 12:57:42,218 - INFO - Loading data from D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_train.csv
+2026-01-31 12:57:42,218 - INFO - Loading data
+2026-01-31 12:57:42,359 - INFO - Loading data from D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_test.csv
+2026-01-31 12:57:42,359 - INFO - Loading data
+2026-01-31 12:57:42,415 - INFO - Data splitted sucefully for Model Training
+2026-01-31 12:57:42,415 - INFO - Intializing our model
+2026-01-31 12:57:42,415 - INFO - Starting our Hyperparamter tuning
+2026-01-31 12:57:42,415 - INFO - Starting our Hyperparamter tuning
+2026-01-31 12:57:48,446 - INFO - Hyperparamter tuning completed
+2026-01-31 12:57:48,446 - INFO - Best paramters are : {'colsample_bytree': np.float64(0.6745401188473625), 'learning_rate': np.float64(0.2952142919229748), 'max_depth': 12, 'min_child_samples': 91, 'min_child_weight': np.float64(6.986584841970366), 'num_leaves': 226}
+2026-01-31 12:57:48,446 - INFO - Evaluating our model
+2026-01-31 12:57:48,509 - INFO - Accuracy Score : 0.7451647183846971
+2026-01-31 12:57:48,509 - INFO - Precision Score : 0.7022622865562971
+2026-01-31 12:57:48,509 - INFO - Recall Score : 0.8561766881538624
+2026-01-31 12:57:48,509 - INFO - F1 Score : 0.7716190476190476
+2026-01-31 12:57:48,510 - INFO - saving the model
+2026-01-31 12:57:48,542 - INFO - Model saved to D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\models\lgbm_model.pkl
+2026-01-31 12:57:48,542 - INFO - Logging the model into MLFLOW
+2026-01-31 12:57:48,595 - INFO - Logging Params and metrics to MLFLOW
+2026-01-31 12:57:48,634 - INFO - Model Training sucesfullly completed
