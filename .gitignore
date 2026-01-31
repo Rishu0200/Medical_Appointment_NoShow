@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 Healthcare_appointment.egg-info/
 logs/
+mlruns/

@@ -21,3 +21,26 @@
 2026-01-31 12:52:14,202 - INFO - Processed training data saved at: D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_train.csv
 2026-01-31 12:52:14,202 - INFO - Processed testing data saved at: D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_test.csv
 2026-01-31 12:52:14,202 - INFO - Data Processing Completed Successfully
+2026-01-31 12:53:51,199 - INFO - Starting our Model Training pipeline
+2026-01-31 12:53:51,199 - INFO - Starting our MLFLOW experimentation
+2026-01-31 12:53:51,199 - INFO - Logging the training and testing datset to MLFLOW
+2026-01-31 12:53:51,249 - INFO - Loading data from D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_train.csv
+2026-01-31 12:53:51,249 - INFO - Loading data
+2026-01-31 12:53:51,406 - INFO - Loading data from D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\processed\processed_test.csv
+2026-01-31 12:53:51,406 - INFO - Loading data
+2026-01-31 12:53:51,454 - INFO - Data splitted sucefully for Model Training
+2026-01-31 12:53:51,454 - INFO - Intializing our model
+2026-01-31 12:53:51,454 - INFO - Starting our Hyperparamter tuning
+2026-01-31 12:53:51,454 - INFO - Starting our Hyperparamter tuning
+2026-01-31 12:54:02,301 - INFO - Hyperparamter tuning completed
+2026-01-31 12:54:02,301 - INFO - Best paramters are : {'colsample_bytree': np.float64(0.6745401188473625), 'learning_rate': np.float64(0.2952142919229748), 'max_depth': 12, 'min_child_samples': 91, 'min_child_weight': np.float64(6.986584841970366), 'num_leaves': 226}
+2026-01-31 12:54:02,301 - INFO - Evaluating our model
+2026-01-31 12:54:02,357 - INFO - Accuracy Score : 0.7451647183846971
+2026-01-31 12:54:02,358 - INFO - Precision Score : 0.7022622865562971
+2026-01-31 12:54:02,358 - INFO - Recall Score : 0.8561766881538624
+2026-01-31 12:54:02,358 - INFO - F1 Score : 0.7716190476190476
+2026-01-31 12:54:02,358 - INFO - saving the model
+2026-01-31 12:54:02,387 - INFO - Model saved to D:\Rishabh Official\Data Science\Placements for Project\Medical-Appointment-NoShow\artifacts\models\lgbm_model.pkl
+2026-01-31 12:54:02,387 - INFO - Logging the model into MLFLOW
+2026-01-31 12:54:02,405 - INFO - Logging Params and metrics to MLFLOW
+2026-01-31 12:54:02,432 - INFO - Model Training sucesfullly completed
